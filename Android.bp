@@ -1,0 +1,15 @@
+package {
+    default_applicable_licenses: ["hardware_interfaces_euicc_license"],
+}
+
+aidl_interface {
+    name: "android.hardware.euicc",
+    vendor_available: true,
+    srcs: ["android/hardware/euicc/IEuicc.aidl"],
+    stability: "vintf",
+    backend: {
+        cpp: {
+            enabled: true,
+        },
+    },
+}
