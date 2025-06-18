@@ -1,5 +1,5 @@
 package {
-    default_applicable_licenses: ["hardware_interfaces_euicc_license"],
+    default_applicable_license: "Apache-2.0",
 }
 
 aidl_interface {
