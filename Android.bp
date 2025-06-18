@@ -24,10 +24,17 @@ package {
 aidl_interface {
     name: "android.hardware.euicc",
     vendor_available: true,
-    srcs: ["android/hardware/euicc/IEuicc.aidl"],
+    srcs: ["aidl/android/hardware/euicc/*.aidl"],
     stability: "vintf",
+    versions: ["1"],
     backend: {
         cpp: {
+            enabled: true,
+        },
+        ndk: {
+            enabled: true,
+        },
+        ndk_platform: {
             enabled: true,
         },
     },
